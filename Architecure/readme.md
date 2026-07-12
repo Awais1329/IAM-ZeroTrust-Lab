@@ -4,15 +4,12 @@
 
 The following architecture illustrates the implementation of an Identity and Access Management (IAM) and Zero Trust security lab using Microsoft Entra ID (formerly Azure Active Directory). The environment demonstrates how users, security groups, role-based access control (RBAC), and the Joiner-Mover-Leaver (JML) lifecycle work together to secure enterprise identities and resources.
 
----
 
 ## Architecture Overview
 
 The architecture is built around **Microsoft Entra ID**, which serves as the central identity provider. All users authenticate through Entra ID before accessing organizational resources. User permissions are managed using **Security Groups** and **Role-Based Access Control (RBAC)** while following the **Least Privilege** principle.
 
 The environment also incorporates **Zero Trust Security**, ensuring that every access request is verified before granting access to organizational resources.
-
----
 
 ## Components
 
@@ -29,7 +26,7 @@ Microsoft Entra ID acts as the central Identity and Access Management platform r
 
 Every user must authenticate through Microsoft Entra ID before accessing enterprise resources.
 
----
+
 
 ### 2. Users
 
@@ -45,7 +42,7 @@ The lab contains multiple users representing different job roles within an organ
 
 Each user is assigned permissions according to their responsibilities.
 
----
+
 
 ### 3. Security Groups
 
@@ -62,7 +59,7 @@ Instead of assigning permissions individually, access is granted through group m
 
 This approach improves scalability and simplifies administration.
 
----
+
 
 ### 4. Role-Based Access Control (RBAC)
 
@@ -77,7 +74,7 @@ Implemented roles include:
 
 RBAC follows the **Least Privilege** principle by preventing unnecessary administrative access.
 
----
+
 
 ### 5. Access to Organizational Resources
 
@@ -92,7 +89,7 @@ Example resources include:
 
 Access is granted only if the user has sufficient permissions.
 
----
+
 
 ### 6. Zero Trust Principles
 
@@ -108,7 +105,7 @@ The implementation is based on five principles:
 
 These principles help reduce unauthorized access and improve overall security.
 
----
+
 
 ### 7. Conditional Access (Planned)
 
@@ -124,7 +121,7 @@ The planned policies include:
 
 > **Note:** Conditional Access was not implemented because Microsoft Entra ID Free does not support this feature. It can be demonstrated using a Microsoft Entra ID Premium P2 trial.
 
----
+
 
 ### 8. Access Review
 
@@ -138,7 +135,7 @@ Regular reviews include:
 - Removing unnecessary permissions
 - Enforcing Least Privilege
 
----
+
 
 ### 9. Joiner-Mover-Leaver (JML) Workflow
 
@@ -153,7 +150,6 @@ When a new employee joins the organization:
 - Assign required role
 - Grant access to resources
 
----
 
 #### Mover
 
@@ -164,7 +160,7 @@ When an employee changes departments:
 - Update RBAC role if required
 - Review existing permissions
 
----
+
 
 #### Leaver
 
@@ -175,7 +171,7 @@ When an employee leaves the organization:
 - Delete or disable the account
 - Remove all organizational access
 
----
+
 
 ## Security Benefits
 
@@ -190,7 +186,7 @@ This architecture provides several security improvements:
 - Zero Trust Security Implementation
 - Better Visibility into User Access
 
----
+
 
 ## Technologies Used
 
@@ -203,7 +199,7 @@ This architecture provides several security improvements:
 - Microsoft 365
 - Azure Portal
 
----
+
 
 ## Summary
 

@@ -1,4 +1,4 @@
-# Microsoft Entra ID IAM & Zero Trust Lab
+<h1 align="center"> IAM & Zero Trust Lab</h1>
 
 ## Overview
 
